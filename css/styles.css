@@ -4,23 +4,29 @@
 }
 body{
     font-family: "Roboto", sans-serif;
+    background: linear-gradient(135deg, #0A0014 0%, #1B0036 50%, #31004d 100%);
+    color: white;
 }
 button{
-    border-radius: 5px;
-    height: 40px;
-    padding-top: 10px;
-    width: 150px;
-    padding-bottom: 10px;
+    background: linear-gradient(135deg, #9E00FF 0%, #6D00FF 100%);
     border: none;
+    border-radius: 30px;
     color: white;
-    background: #8c00ff;
+    padding: 12px 30px;
+    font-size: 1rem;
     text-transform: uppercase;
-    box-shadow: 5px 5px rgba(225, 2, 255, 0.404);
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(140, 0, 255, 0.6);
+    transition: all 0.3s ease;
+    font-weight: 600;
 }
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(140, 0, 255, 0.9);
+}
+
 section#home{
     height: 100vh;
-    background: #ae00ff;
-    background: linear-gradient(0deg, rgba(174, 0, 255, 1) 0%, rgba(119, 0, 255, 1) 100%);
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -56,3 +62,135 @@ section#home #content h2{
     color: white;
     margin-top: 20px;
 }
+#content img {
+    border-radius: 50%; /* Makes the image circular */
+    display: block;
+    margin: 0 auto;
+    width: 500px; /* Adjust size of the image */
+    height: 500px; /* Adjust size of the image */
+    object-fit: cover; /* Ensures the image covers the circular area properly */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Adds glow effect */
+    border: 5px solid #8c00ff; /* Adds a border around the image */
+    margin-top: 10%;
+}
+/* About Section */
+#about {
+    padding: 50px;
+}
+
+#about-content {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+#about-me {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 1;
+}
+
+.circle-img img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #8c00ff;
+    margin-left: 250px;
+}
+
+#about-text {
+    max-width: 500px;
+}
+
+#about-text h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+#about-text p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.skills {
+    margin-top: 30px;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.progress-bar {
+    background: #ddd;
+    border-radius: 10px;
+    width: 100%;
+    height: 10px;
+    margin-top: 5px;
+}
+
+.progress {
+    background: #8c00ff;
+    height: 100%;
+    border-radius: 10px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #8c00ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Servicios */
+#services {
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+}
+
+#services h3 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 40px;
+}
+
+/* Diseño de las tarjetas de servicio */
+.service-card {
+    display: inline-block;
+    width: 220px;
+    background: #fff;
+    color: #8c00ff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: scale(1.05);  /* Efecto de ampliación al pasar el ratón */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);  /* Efecto de sombra más fuerte */
+}
+
+.service-card img {
+    width: 50px;  /* Tamaño del ícono */
+    margin-bottom: 20px;
+}
+
+.service-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
