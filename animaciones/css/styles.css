@@ -18,8 +18,8 @@
     position: absolute;
     bottom: 58%; 
     left: 8%;      
-    width: 240px;
-    height: 240px;
+    width: 700px;
+    height: 700px;
     background: url("../img/dk.png") no-repeat center/contain;
     animation-name: saltos;
     animation-duration: 10s;
@@ -30,8 +30,8 @@
     position: absolute;
     bottom: 13%;   
     left: 10%;    
-    width: 160px;
-    height: 160px;
+    width: 480px;
+    height: 600px;
     background: url("../img/barril.png") no-repeat center/contain;
     transform: rotate(-15deg);
   }
@@ -40,8 +40,8 @@
     position: absolute;
     bottom: 14%;  
     right: 10%;   
-    width: 160px;
-    height: 160px;
+    width: 480px;
+    height: 600px;
     background: url("../img/barril.png") no-repeat center/contain;
   }
 
@@ -53,26 +53,46 @@
     animation-iteration-count: infinite;
 
   }
-  @keyframes rotarBarril{
-    from {
-        transform: rotate(-80deg);
-    }
-    to{
-        transform: rotate(80deg);
-    }
+  @keyframes rotarBarril {
+  from{
+    transform: rotate(-80deg);
   }
-  @keyframes saltos{
-    0%{
-        top: -250px
-    }
-    10%{
-        top: 85px
-    }
-    40%{
-        top: 80px;
-    }
-    100%{
-        left: 700px;
-        top: 240px;
-    }
+  to{
+    transform: rotate(80deg);
   }
+}
+@keyframes saltos {
+ 0% {
+    top: -95px;
+    left: 800px;
+       transform: rotate(0deg);
+        opacity: 1;
+  }
+
+  30% {
+    top: 500px;  
+    left: 800px; 
+       transform: rotate(0deg);
+        opacity: 1;
+  }
+
+  60% {
+    top: 1100px; 
+    left: 3000px;  
+       transform: rotate(0deg);
+        opacity: 1;
+  }
+
+  70% {
+    top: 1800px;   
+    left: 530px;  
+       transform: rotate(0deg);
+        opacity: 1;
+       
+  }
+   100%{
+    top: -690px;  
+    transform: rotate(1080deg);
+     opacity: 0.3;
+   }
+}
